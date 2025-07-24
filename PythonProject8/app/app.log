@@ -1,0 +1,62 @@
+2025-07-24 18:03:43,772 | INFO | FastAPI app initialized.
+2025-07-24 18:03:43,772 | INFO | FastAPI app initialized.
+2025-07-24 18:03:43,886 | INFO | Model loaded successfully from C:\Users\kamal\PycharmProjects\PythonProject8\app\data\model.json
+2025-07-24 18:03:59,134 | INFO | FastAPI app initialized.
+2025-07-24 18:03:59,157 | INFO | Model loaded successfully from C:\Users\kamal\PycharmProjects\PythonProject8\app\data\model.json
+2025-07-24 18:04:05,229 | INFO | Root endpoint accessed.
+2025-07-24 18:04:49,982 | INFO | Received prediction request: {"bill_length_mm":0.0,"bill_depth_mm":0.0,"flipper_length_mm":0.0,"body_mass_g":0.0,"year":0,"sex":"male","island":"Torgersen"}
+2025-07-24 18:04:50,004 | ERROR | Prediction failed due to error: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Male', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Male in input data
+training data did not have the following fields: sex_male, island_Biscoe, sex_female, year
+Traceback (most recent call last):
+  File "C:\Users\kamal\PycharmProjects\PythonProject8\app\main.py", line 94, in predict_penguin
+    prediction = model.predict(input_data)[0]
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Male', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Male in input data
+training data did not have the following fields: sex_male, island_Biscoe, sex_female, year
+2025-07-24 18:04:51,475 | INFO | Received prediction request: {"bill_length_mm":0.0,"bill_depth_mm":0.0,"flipper_length_mm":0.0,"body_mass_g":0.0,"year":0,"sex":"male","island":"Torgersen"}
+2025-07-24 18:04:51,478 | ERROR | Prediction failed due to error: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Male', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Male in input data
+training data did not have the following fields: sex_male, island_Biscoe, sex_female, year
+Traceback (most recent call last):
+  File "C:\Users\kamal\PycharmProjects\PythonProject8\app\main.py", line 94, in predict_penguin
+    prediction = model.predict(input_data)[0]
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\sklearn.py", line 1718, in predict
+    class_probs = super().predict(
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\sklearn.py", line 1327, in predict
+    predts = self.get_booster().inplace_predict(
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 729, in inner_f
+    return func(**kwargs)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 2667, in inplace_predict
+    self._validate_features(fns)
+  File "C:\Users\kamal\PycharmProjects\PythonProject2\.venv\lib\site-packages\xgboost\core.py", line 3243, in _validate_features
+    raise ValueError(msg.format(self.feature_names, feature_names))
+ValueError: feature_names mismatch: ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'sex_Male', 'island_Dream', 'island_Torgersen'] ['bill_length_mm', 'bill_depth_mm', 'flipper_length_mm', 'body_mass_g', 'year', 'sex_female', 'sex_male', 'island_Biscoe', 'island_Dream', 'island_Torgersen']
+expected sex_Male in input data
+training data did not have the following fields: sex_male, island_Biscoe, sex_female, year
+2025-07-24 18:13:09,295 | INFO | FastAPI app initialized.
+2025-07-24 18:13:09,319 | INFO | Model loaded successfully from C:\Users\kamal\PycharmProjects\PythonProject8\app\data\model.json
+2025-07-24 18:17:19,001 | INFO | FastAPI app initialized.
+2025-07-24 18:17:19,021 | INFO | Model loaded successfully from C:\Users\kamal\PycharmProjects\PythonProject8\app\data\model.json
+2025-07-24 18:17:21,458 | INFO | Root endpoint accessed.
+2025-07-24 18:36:12,689 | INFO | FastAPI app initialized.
+2025-07-24 18:36:12,828 | INFO | Model loaded successfully from C:\Users\kamal\PycharmProjects\PythonProject8\app\data\model.json
+2025-07-24 18:36:13,029 | INFO | Root endpoint accessed.

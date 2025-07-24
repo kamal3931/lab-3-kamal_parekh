@@ -1,0 +1,15 @@
+[project]
+name = "penguin-classifier"
+version = "0.1.0"
+dependencies = [
+    "fastapi",
+    "uvicorn",
+    "scikit-learn",
+    "xgboost",
+    "seaborn",
+    "pandas",
+    "joblib"
+]
+
+[tool.uv]
+virtualenvs.in-project = true
